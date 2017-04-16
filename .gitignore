@@ -12,6 +12,17 @@ src_managed/
 project/boot/
 project/plugins/project/
 
+/target/
+*.class
+*.log
+.classpath
+.project
+.settings
+org.scala-ide.sdt.core/META-INF/MANIFEST.MF
+org.scala-ide.sdt.update-site/site.xml
+.cache-main
+.cache-tests
+
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
