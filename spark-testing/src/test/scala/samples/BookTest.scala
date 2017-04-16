@@ -18,10 +18,10 @@ class BookTest extends FunSuite with SharedSparkContext with RDDComparisons {
     val resultRDD = sc.parallelize(Seq(3, 2, 1))
 
     assert(None === compareRDD(expectedRDD, resultRDD)) // succeed
-//    assert(None === compareRDDWithOrder(expectedRDD, resultRDD)) // Fail
+    assert(None === compareRDDWithOrder(expectedRDD, resultRDD)) // Fail
 
     assertRDDEquals(expectedRDD, resultRDD) // succeed
-//    assertRDDEqualsWithOrder(expectedRDD, resultRDD) // Fail
+    assertRDDEqualsWithOrder(expectedRDD, resultRDD) // Fail
   }
   
 }
