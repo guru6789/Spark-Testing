@@ -12,10 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ 
 package samples
 
-/*
+
 ScalaTest facilitates different styles of testing by providing traits you can mix
 together to get the behavior and syntax you prefer.  A few examples are
 included here.  For more information, visit:
@@ -24,7 +24,7 @@ http://www.scalatest.org/
 
 One way to use ScalaTest is to help make JUnit or TestNG tests more
 clear and concise. Here's an example:
-*/
+
 import scala.collection.mutable.Stack
 import org.scalatest.Assertions
 import org.junit.Test
@@ -47,9 +47,9 @@ class StackSuite extends Assertions {
   }
 }
 
-/*
+
 Here's an example of a FunSuite with ShouldMatchers mixed in:
-*/
+
 import org.scalatest.FunSuite
 import org.scalatest.matchers.ShouldMatchers
 
@@ -75,7 +75,7 @@ class ListSuite extends FunSuite with ShouldMatchers {
   }
 }
 
-/*
+
 ScalaTest also supports the behavior-driven development style, in which you
 combine tests with text that specifies the behavior being tested. Here's
 an example whose text output when run looks like:
@@ -83,7 +83,7 @@ an example whose text output when run looks like:
 A Map
 - should only contain keys and values that were added to it
 - should report its size as the number of key/value pairs it contains
-*/
+
 import org.scalatest.FunSpec
 import scala.collection.mutable.Stack
 
@@ -107,3 +107,4 @@ class ExampleSpec extends FunSpec {
     }
   }
 }
+*/
