@@ -21,7 +21,7 @@ class BookTest extends FunSuite with SharedSparkContext with RDDComparisons {
     assert(None === compareRDDWithOrder(expectedRDD, resultRDD)) // Fail
 
     assertRDDEquals(expectedRDD, resultRDD) // succeed
-    assertRDDEqualsWithOrder(expectedRDD, resultRDD) // Fail
+    assertRDDEqualsWithOrder(expectedRDD, resultRDD) // Fail//
   }
   
 }
